@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Алиса Комарова — начинающий программист</title>
+<meta name="description" content="Портфолио Алисы Комаровой — начинающего программиста. Языки программирования, проекты, опыт работы, сертификаты и контакты.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23111111'/%3E%3Ctext x='50' y='68' font-family='Manrope, Arial, sans-serif' font-size='58' font-weight='800' text-anchor='middle' fill='%23a7e857'%3EА%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;1,500;1,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="mainStyle.css">
+</head>
+<body>
+
+<!-- ============ SVG SPRITE (hidden) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z" fill="currentColor"/></symbol>
+    <symbol id="i-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 3 V21 M3 12 H21"/></symbol>
+    <symbol id="i-asterisk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 3 V21 M4.9 6.5 L19.1 17.5 M19.1 6.5 L4.9 17.5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18 L18 6 M9 6 H18 V15"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 L9.5 18 L20 5"/></symbol>
+    <symbol id="i-check-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M8 12.3 L11 15.3 L16.3 9"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M12 3 L21 8 L12 13 L3 8 Z"/><path d="M3 13 L12 18 L21 13" stroke-linecap="round"/><path d="M3 17.5 L12 22.5 L21 17.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-browser" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="0.5"/><path d="M3 9 H21 M6.5 6.7 H7.5 M9.5 6.7 H10.5"/></symbol>
+    <symbol id="i-cursor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M6 4 L18 12 L12.5 13.5 L15 20 L12.5 21 L10 14.5 L6 18 Z"/></symbol>
+    <symbol id="i-nodes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.3"/><circle cx="19" cy="6" r="2.3"/><circle cx="12" cy="19" r="2.3"/><path d="M7 7.3 L11 17 M17 7.3 L13 17"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20 L15.2 15.2"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20 L4.8 16.2 L15.8 5.2 C16.5 4.5 17.6 4.5 18.3 5.2 C19 5.9 19 7 18.3 7.7 L7.3 18.7 Z M13.5 7.5 L16.5 10.5"/></symbol>
+    <symbol id="i-stack" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="6"/><rect x="5" y="14" width="14" height="6"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 7 L3.5 12 L8.5 17 M15.5 7 L20.5 12 L15.5 17"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="0.5"/><path d="M4 6.5 L12 13 L20 6.5"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-telegram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 4 L2.5 11.4 L9 13.6 M21 4 L15.8 20 L9 13.6 M21 4 L9 13.6 M9 13.6 L9 19 L12 16"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4 H9 L11 9 L8.5 10.5 C9.5 13 11 14.5 13.5 15.5 L15 13 L20 15 V19 C20 20.1 19.1 21 18 21 C10.8 20.6 4.4 14.2 4 7 C4 5.9 4.9 4 5 4 Z"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.2 L19 12 L8 18.8 Z" fill="currentColor"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12 H20 M14 6 L20 12 L14 18"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21 C12 21 5 14.4 5 9.5 A7 7 0 0 1 19 9.5 C19 14.4 12 21 12 21 Z"/><circle cx="12" cy="9.5" r="2.4"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="0.5"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="M3 16 L8.5 11 L13 14.5 L16 12 L21 16.5"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="0.7"><circle cx="100" cy="100" r="90"/><ellipse cx="100" cy="100" rx="90" ry="32"/><ellipse cx="100" cy="100" rx="90" ry="60"/><ellipse cx="100" cy="100" rx="32" ry="90"/><ellipse cx="100" cy="100" rx="60" ry="90"/><line x1="10" y1="100" x2="190" y2="100"/><line x1="100" y1="10" x2="100" y2="190"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div id="scroll-progress" role="presentation"></div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div id="cursor-dot" aria-hidden="true"></div>
+
+<!-- ============ TOP NAV ============ -->
+<header class="topnav" id="topnav">
+  <div class="topnav-group">
+    <span class="dot-live" aria-hidden="true"></span>
+    <span class="topnav-text">Создаю цифровой опыт</span>
+  </div>
+  <div class="topnav-group">
+    <span class="topnav-text">Открыта к новым проектам</span>
+    <svg class="star-deco" aria-hidden="true"><use href="#i-star"></use></svg>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+
+  <!-- photo = background layer for the whole hero; fades in already darkened + tinted -->
+  <div class="hero-bg" aria-hidden="true">
+    <img class="hero-photo" src="image.png" alt="Алиса Комарова, начинающий программист, на фоне леса" width="960" height="640">
+    <div class="hero-overlay"></div>
+    <div class="hero-vignette"></div>
+  </div>
+
+  <div class="hero-decor" aria-hidden="true">
+    <span class="deco-dot deco-dot--1" data-parallax="0.10"></span>
+    <span class="deco-dot deco-dot--2" data-parallax="-0.08"></span>
+    <span class="deco-ring" data-parallax="0.14"></span>
+    <svg class="deco-cross" data-parallax="-0.12"><use href="#i-cross"></use></svg>
+    <span class="deco-vline" data-parallax="0.18"></span>
+  </div>
+
+  <!-- all text lives here, layered on top of the photo -->
+  <div class="hero-content">
+
+    <div class="hero-title-wrap">
+      <h1 class="hero-title">ПОРТФОЛИО</h1>
+    </div>
+
+    <div class="hero-cutout" aria-hidden="true">
+      <img src="withoutBack.png" alt="" width="1536" height="1024">
+    </div>
+
+    <div class="hero-info-row">
+
+      <div class="hero-col hero-col--left">
+        <span class="tag tag--outline reveal reveal--sm" style="--rd:2.3s">C# / PYTHON / SQL</span>
+        <blockquote class="hero-quote reveal reveal--sm" style="--rd:2.6s">
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <p>Я только в начале пути и точно знаю одно — хочу учиться, пробовать новое и становиться лучше с каждым проектом.</p>
+        </blockquote>
+      </div>
+
+      <div class="hero-col hero-col--right">
+        <h2 class="hero-name reveal reveal--sm" style="--rd:2.75s">АЛИСА<br>КОМАРОВА</h2>
+        <span class="tag tag--solid reveal reveal--sm" style="--rd:2.9s">НАЧИНАЮЩИЙ ПРОГРАММИСТ</span>
+        <p class="hero-desc reveal reveal--sm" style="--rd:3.05s">Изучаю разработку и создаю рабочие цифровые решения — от сайтов и приложений до баз данных.</p>
+        <div class="hero-stats reveal reveal--sm" style="--rd:3.2s">
+          <div class="stat"><span class="stat-num">5+</span><span class="stat-label">языков программирования</span></div>
+          <div class="stat"><span class="stat-num">4+</span><span class="stat-label" style="max-width:170px">года пытаюсь создавать автоматизированные системы</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span></span>
+      <em>ЛИСТАЙ</em>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Компетенции</h2>
+      <span class="section-head-line" aria-hidden="true"></span>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card reveal" style="--rd:0s">
+        <span class="service-index">01</span>
+        <svg class="service-icon"><use href="#i-browser"></use></svg>
+        <h3 class="service-title">Web-разработка</h3>
+        <p class="service-desc">Создание сайтов и веб-интерфейсов, в том числе на React.</p>
+      </article>
+      <article class="service-card reveal" style="--rd:0.1s">
+        <span class="service-index">02</span>
+        <svg class="service-icon"><use href="#i-code"></use></svg>
+        <h3 class="service-title">Разработка приложений</h3>
+        <p class="service-desc">Настольные и мобильные приложения на C#, WPF, WinForms и Android Studio.</p>
+      </article>
+      <article class="service-card reveal" style="--rd:0.2s">
+        <span class="service-index">03</span>
+        <svg class="service-icon"><use href="#i-nodes"></use></svg>
+        <h3 class="service-title">Базы данных</h3>
+        <p class="service-desc">Проектирование баз данных и работа с SQL-запросами.</p>
+      </article>
+      <article class="service-card reveal" style="--rd:0.3s">
+        <span class="service-index">04</span>
+        <svg class="service-icon"><use href="#i-layers"></use></svg>
+        <h3 class="service-title">1С и документооборот</h3>
+        <p class="service-desc">Настройка и доработка решений на платформе 1С.</p>
+      </article>
+      <article class="service-card reveal" style="--rd:0.4s">
+        <span class="service-index">05</span>
+        <svg class="service-icon"><use href="#i-stack"></use></svg>
+        <h3 class="service-title">Скрипты на Python</h3>
+        <p class="service-desc">Автоматизация задач и обработка данных.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS + PROJECTS INTRO ============ -->
+<section class="section skills" id="skills">
+  <div class="container">
+    <div class="skills-grid">
+
+      <div class="skills-col-left reveal reveal--left">
+        <div class="section-head" style="margin-bottom:0">
+          <span class="section-num">02</span>
+          <h2 class="section-title">Мои навыки</h2>
+        </div>
+
+        <div class="skill-list">
+          <div class="skill-item">
+            <span class="skill-icon"><svg><use href="#i-search"></use></svg></span>
+            <div><h3 class="skill-item-title">Анализ задач</h3><p class="skill-item-desc">Разбираю требования и планирую решение перед началом работы.</p></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-icon"><svg><use href="#i-pen"></use></svg></span>
+            <div><h3 class="skill-item-title">Интерфейсы</h3><p class="skill-item-desc">Верстаю понятные интерфейсы для сайтов и приложений.</p></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-icon"><svg><use href="#i-stack"></use></svg></span>
+            <div><h3 class="skill-item-title">Прототипы</h3><p class="skill-item-desc">Быстро собираю рабочие прототипы и тестирую идеи.</p></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-icon"><svg><use href="#i-code"></use></svg></span>
+            <div><h3 class="skill-item-title">Разработка</h3><p class="skill-item-desc">Пишу код на C#, Python, Java и работаю с React.</p></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-icon"><svg><use href="#i-check-circle"></use></svg></span>
+            <div><h3 class="skill-item-title">Тестирование</h3><p class="skill-item-desc">Проверяю код, нахожу и исправляю ошибки.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-col-right reveal reveal--right">
+        <span class="eyebrow">Портфолио / 03</span>
+        <h3 class="projects-lead-title">Избранные проекты</h3>
+        <p class="projects-lead-text">Подборка проектов, в которых я писала код, разбиралась в логике задачи и доводила решение до рабочего результата.</p>
+        <div class="projects-count-badge">
+          <span class="count">06</span>
+          <span class="count-label">завершённых проектов</span>
+        </div>
+        <a class="btn-arrow" href="#projects">Смотреть все проекты <svg><use href="#i-arrow"></use></svg></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section projects" id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Проекты</h2>
+      <span class="section-head-line" aria-hidden="true"></span>
+    </div>
+
+    <div class="projects-list">
+
+      <div class="project-group reveal reveal--scale">
+        <div class="project-group-head">
+          <span class="eyebrow">Один проект — три модуля</span>
+          <h3 class="project-group-title">Автоматизация горнолыжного курорта</h3>
+          <p class="project-group-desc">Комплексная система из трёх взаимосвязанных частей: клиенты записываются онлайн, ресепшен ведёт записи и аренду оборудования в десктопном приложении, а тренеры смотрят своё расписание через Telegram-бота — всё работает с одними и теми же данными.</p>
+        </div>
+
+        <div class="project-group-flow">
+
+          <article class="project-card project-card--video reveal" data-video="projects/СайтВидео.mp4" data-video-title="Сайт онлайн-записи" tabindex="0" role="button" aria-haspopup="dialog" style="--rd:0s">
+            <span class="project-part-tag">Модуль 1 · Сайт</span>
+            <div class="project-preview project-preview--video">
+              <video class="preview-video" src="projects/СайтВидео.mp4" muted playsinline preload="metadata"></video>
+              <div class="preview-shade"></div>
+              <span class="preview-play" aria-hidden="true"><svg><use href="#i-play"></use></svg></span>
+            </div>
+            <div class="project-info">
+              <div>
+                <h3 class="project-title">Сайт онлайн-записи</h3>
+                <p class="project-desc">Онлайн-запись клиентов на занятия.</p>
+              </div>
+            </div>
+          </article>
+
+          <span class="project-flow-arrow" aria-hidden="true"><svg><use href="#i-arrow-right"></use></svg></span>
+
+          <article class="project-card project-card--video reveal" data-video="projects/настольное%20сотрудник.mp4" data-video-title="Приложение ресепшена" tabindex="0" role="button" aria-haspopup="dialog" style="--rd:0.1s">
+            <span class="project-part-tag">Модуль 2 · Десктоп</span>
+            <div class="project-preview project-preview--video">
+              <video class="preview-video" src="projects/настольное%20сотрудник.mp4" muted playsinline preload="metadata"></video>
+              <div class="preview-shade"></div>
+              <span class="preview-play" aria-hidden="true"><svg><use href="#i-play"></use></svg></span>
+            </div>
+            <div class="project-info">
+              <div>
+                <h3 class="project-title">Приложение ресепшена</h3>
+                <p class="project-desc">Мониторинг и изменение записей, сдача оборудования в аренду, аналитическая отчётность.</p>
+              </div>
+            </div>
+          </article>
+
+          <span class="project-flow-arrow" aria-hidden="true"><svg><use href="#i-arrow-right"></use></svg></span>
+
+          <article class="project-card project-card--video reveal" data-video="projects/ТелеграмБот.mp4" data-video-title="Telegram-бот для тренеров" tabindex="0" role="button" aria-haspopup="dialog" style="--rd:0.2s">
+            <span class="project-part-tag">Модуль 3 · Telegram-бот</span>
+            <div class="project-preview project-preview--video">
+              <video class="preview-video" src="projects/ТелеграмБот.mp4" muted playsinline preload="metadata"></video>
+              <div class="preview-shade"></div>
+              <span class="preview-play" aria-hidden="true"><svg><use href="#i-play"></use></svg></span>
+            </div>
+            <div class="project-info">
+              <div>
+                <h3 class="project-title">Telegram-бот для тренеров</h3>
+                <p class="project-desc">Просмотр расписания тренера на любой промежуток времени.</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <hr class="project-divider reveal">
+
+      <div class="project-row reveal reveal--scale">
+        <article class="project-card project-card--video" data-video="projects/Сайт%20ЛетоГрупп.mp4" data-video-title="Сайт компании по продаже ГПЯ" tabindex="0" role="button" aria-haspopup="dialog">
+          <div class="project-preview project-preview--video">
+            <video class="preview-video" src="projects/Сайт%20ЛетоГрупп.mp4" muted playsinline preload="metadata"></video>
+            <div class="preview-shade"></div>
+            <span class="preview-play" aria-hidden="true"><svg><use href="#i-play"></use></svg></span>
+          </div>
+          <div class="project-info">
+            <div>
+              <h3 class="project-title">Сайт для компании по продаже ГПЯ</h3>
+              <p class="project-desc">Веб-сайт для компании, торгующей ГПЯ.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card project-card--video" data-video="projects/matrica.mp4" data-video-title="Обнаружение главной диагонали матрицы" tabindex="0" role="button" aria-haspopup="dialog">
+          <div class="project-preview project-preview--video">
+            <video class="preview-video" src="projects/matrica.mp4" muted playsinline preload="metadata"></video>
+            <div class="preview-shade"></div>
+            <span class="preview-play" aria-hidden="true"><svg><use href="#i-play"></use></svg></span>
+          </div>
+          <div class="project-info">
+            <div>
+              <h3 class="project-title">Обнаружение главной диагонали матрицы</h3>
+              <p class="project-desc">Программа для определения главной диагонали матрицы с выводом лога вычислений.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card project-card--gallery" data-images="projects/mobile1.png,projects/mobile2.jpg,projects/mobile3.png,projects/mobile4.jpg,projects/mobile5.jpg,projects/mobile6.jpg,projects/mobile7.jpg,projects/mobile8.jpg,projects/mobile9.jpg,projects/mobile10.jpg,projects/mobile11.jpg,projects/mobile12.jpg,projects/mobile13.jpg,projects/mobile14.jpg,projects/mobile15.jpg" data-gallery-title="Мобильное приложение для бухгалтерского учёта" tabindex="0" role="button" aria-haspopup="dialog">
+          <div class="project-preview">
+            <img class="preview-photo" src="projects/mobile1.png" alt="Мобильное приложение для бухгалтерского учёта" loading="lazy">
+            <div class="preview-shade"></div>
+            <span class="preview-play" aria-hidden="true"><svg><use href="#i-image"></use></svg></span>
+          </div>
+          <div class="project-info">
+            <div>
+              <h3 class="project-title">Мобильное приложение для бухгалтерского учёта</h3>
+              <p class="project-desc">Автоматизация учёта оказания услуг с ролями бухгалтера и администратора системы.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECT VIDEO LIGHTBOX ============ -->
+<div class="video-lightbox" id="video-lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+  <button class="video-lightbox-close" id="video-lightbox-close" type="button" aria-label="Закрыть">&times;</button>
+  <figure class="video-lightbox-figure">
+    <video class="video-lightbox-video" id="video-lightbox-video" controls playsinline></video>
+    <figcaption class="video-lightbox-caption" id="video-lightbox-caption"></figcaption>
+  </figure>
+</div>
+
+<!-- ============ PROJECT GALLERY LIGHTBOX ============ -->
+<div class="gallery-lightbox" id="gallery-lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+  <button class="gallery-lightbox-close" id="gallery-lightbox-close" type="button" aria-label="Закрыть">&times;</button>
+  <button class="gallery-lightbox-nav gallery-lightbox-prev" id="gallery-lightbox-prev" type="button" aria-label="Предыдущее фото"><svg><use href="#i-arrow-right"></use></svg></button>
+  <figure class="gallery-lightbox-figure">
+    <img class="gallery-lightbox-img" id="gallery-lightbox-img" src="" alt="">
+    <figcaption class="gallery-lightbox-caption" id="gallery-lightbox-caption"></figcaption>
+  </figure>
+  <button class="gallery-lightbox-nav gallery-lightbox-next" id="gallery-lightbox-next" type="button" aria-label="Следующее фото"><svg><use href="#i-arrow-right"></use></svg></button>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-photo-wrap reveal reveal--left">
+        <img class="about-photo" src="withoutBack.png" alt="Портрет Алисы Комаровой" loading="lazy" width="960" height="640">
+        <span class="about-photo-tag">Алиса Комарова</span>
+      </div>
+
+      <div class="about-content reveal reveal--right">
+        <div class="section-head">
+          <span class="section-num">04</span>
+          <h2 class="section-title">Обо мне</h2>
+          <span class="section-head-line" aria-hidden="true"></span>
+        </div>
+        <p class="about-lead">Здравствуйте! Я Алиса, студентка «Тульского государственного университета» по специальности «Прикладная информатика» и начинающий программист, которая пишет не просто рабочий код, а понятные и полезные решения. Я только в начале пути в разработке и готова развиваться в любом направлении.</p>
+        <div class="about-checklist">
+          <div class="about-check-item"><svg><use href="#i-check"></use></svg>Пунктуальность</div>
+          <div class="about-check-item"><svg><use href="#i-check"></use></svg>Чистый код</div>
+          <div class="about-check-item"><svg><use href="#i-check"></use></svg>Постоянное развитие</div>
+          <div class="about-check-item"><svg><use href="#i-check"></use></svg>Командная работа</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section experience" id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Опыт работы</h2>
+      <span class="section-head-line" aria-hidden="true"></span>
+      <span class="tag tag--solid" style="margin-left:auto">10 месяцев</span>
+    </div>
+
+    <div class="experience-list">
+
+      <article class="exp-card reveal" style="--rd:0s">
+        <div class="exp-card-head">
+          <div class="exp-card-top">
+            <span class="exp-badge">Л</span>
+            <div>
+              <h3 class="exp-role">Офис-менеджер</h3>
+              <p class="exp-company">Группа компаний «Лето»</p>
+            </div>
+          </div>
+          <span class="exp-period">Февраль 2026 — сейчас · 7 месяцев</span>
+        </div>
+        <p class="exp-summary">Организация и сопровождение внутреннего документооборота, координация взаимодействия между отделами и работа с контрагентами.</p>
+        <ul class="exp-duties">
+          <li>Организация и контроль полного цикла документооборота: от регистрации входящих документов до получения оригиналов</li>
+          <li>Работа в системах ERP и «1С:Документооборот»: проведение документов по задачам, контроль статусов, обеспечение своевременной обработки</li>
+          <li>Ведение базы контрагентов: внесение данных, актуализация реквизитов, поддержание актуальности информации</li>
+          <li>Взаимодействие с типографиями: согласование макетов, подготовка сувенирной и рекламной продукции к печати, контроль сроков изготовления и приёмка тиража</li>
+          <li>Учёт договоров, подготовка данных для проведения реализаций</li>
+          <li>Обработка счетов для проведения платежей, контроль сроков и статусов оплат</li>
+          <li>Коммуникация с внутренними подразделениями для согласования и оперативного решения вопросов по документам</li>
+        </ul>
+      </article>
+
+      <article class="exp-card reveal" style="--rd:0.12s">
+        <div class="exp-card-head">
+          <div class="exp-card-top">
+            <span class="exp-badge">M</span>
+            <div>
+              <h3 class="exp-role">Оператор ПК / Оператор базы данных</h3>
+              <p class="exp-company">METRO Cash &amp; Carry</p>
+            </div>
+          </div>
+          <span class="exp-period">Ноябрь 2025 — Февраль 2026 · 4 месяца</span>
+        </div>
+        <ul class="exp-duties">
+          <li>Обработка заказов клиентов</li>
+          <li>Ведение документооборота (приёмка, отгрузка, возвраты, сопроводительная и разрешительная документация), включая печать и архивацию</li>
+          <li>Организация возврата или обмена товара</li>
+          <li>Взаимодействие с поставщиками по вопросам принимаемых товаров</li>
+          <li>Согласование с клиентами замен на отсутствующий товар</li>
+          <li>Распределение задач на сборку товара по заказам</li>
+          <li>Разрешение конфликтных ситуаций с клиентами</li>
+          <li>Выдача покупателям инструкций на русском языке на технически сложный товар</li>
+          <li>Ввод данных в компьютерную систему</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section education" id="education">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">06</span>
+      <h2 class="section-title">Образование</h2>
+      <span class="section-head-line" aria-hidden="true"></span>
+    </div>
+
+    <div class="experience-list">
+
+      <article class="exp-card reveal" style="--rd:0s">
+        <div class="exp-card-head">
+          <div class="exp-card-top">
+            <span class="exp-badge">Т</span>
+            <div>
+              <h3 class="exp-role">Тульский государственный университет, Тула</h3>
+              <p class="exp-company">Информатика и вычислительная техника (бакалавр техники и технологии)</p>
+            </div>
+          </div>
+          <span class="exp-period">2029 · Неоконченное высшее</span>
+        </div>
+      </article>
+
+      <article class="exp-card reveal" style="--rd:0.12s">
+        <div class="exp-card-head">
+          <div class="exp-card-top">
+            <span class="exp-badge">С</span>
+            <div>
+              <h3 class="exp-role">ГБПОУ МО «Серпуховский колледж»</h3>
+              <p class="exp-company">Информационные системы и программирование</p>
+            </div>
+          </div>
+          <span class="exp-period">2025 · Среднее специальное</span>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="eyebrow reveal" style="margin:40px 0 18px">Повышение квалификации, курсы</div>
+
+    <div class="experience-list">
+
+      <article class="exp-card reveal" style="--rd:0.06s">
+        <div class="exp-card-head">
+          <div class="exp-card-top">
+            <span class="exp-badge">В</span>
+            <div>
+              <h3 class="exp-role">Внешнеэкономическая деятельность</h3>
+              <p class="exp-company">ФГБОУ ВО «Российский экономический университет имени Г.В. Плеханова»</p>
+            </div>
+          </div>
+          <span class="exp-period">2026</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATES ============ -->
+<section class="section certificates" id="certificates">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">07</span>
+      <h2 class="section-title">Сертификаты</h2>
+      <span class="section-head-line" aria-hidden="true"></span>
+    </div>
+
+    <div class="cert-grid">
+
+      <article class="cert-card cert-card--clickable reveal" style="--rd:0s" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="cert-photo"><img src="Certifications/efset.png" alt="EF SET"></div>
+        <div class="cert-info">
+          <h3 class="cert-title">EF SET</h3>
+          <p class="cert-issuer">Международный тест по английскому языку</p>
+          <span class="cert-year">2023</span>
+        </div>
+      </article>
+
+      <article class="cert-card cert-card--clickable reveal" style="--rd:0.06s" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="cert-photo"><img src="Certifications/KET.png" alt="Key English Test"></div>
+        <div class="cert-info">
+          <h3 class="cert-title">Key English Test</h3>
+          <p class="cert-issuer">University of Cambridge — Entry Level Certificate in ESOL International (Key)</p>
+          <span class="cert-year">2019</span>
+        </div>
+      </article>
+
+      <article class="cert-card cert-card--clickable reveal" style="--rd:0.12s" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="cert-photo"><img src="Certifications/demo.jpeg" alt="Цифровой паспорт компетенции"></div>
+        <div class="cert-info">
+          <h3 class="cert-title">Цифровой паспорт компетенции</h3>
+          <p class="cert-issuer">Демонстрационный экзамен по специальности «Программист»</p>
+          <span class="cert-year">2025</span>
+        </div>
+      </article>
+
+      <article class="cert-card cert-card--clickable reveal" style="--rd:0.18s" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="cert-photo"><img src="Certifications/КвалификацияПрограммист.jpeg" alt="Квалификационный экзамен"></div>
+        <div class="cert-info">
+          <h3 class="cert-title">Квалификационный экзамен</h3>
+          <p class="cert-issuer">Добровольный экзамен по специальности «Программист»</p>
+        </div>
+      </article>
+
+      <article class="cert-card cert-card--clickable reveal" style="--rd:0.24s" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="cert-photo"><img src="Certifications/bestphoto.png" alt="International Photography Award"></div>
+        <div class="cert-info">
+          <h3 class="cert-title">International Photography Award</h3>
+          <p class="cert-issuer">8th 35Awards — «Топ 20 фотографов Серпухова»</p>
+          <span class="cert-year">2023</span>
+        </div>
+      </article>
+
+      <article class="cert-card cert-card--clickable reveal" style="--rd:0.3s" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="cert-photo"><img src="Certifications/foodphoto.png" alt="Photography Theme Contest"></div>
+        <div class="cert-info">
+          <h3 class="cert-title">Photography Theme Contest</h3>
+          <p class="cert-issuer">Food Photography — «Top 12% food contest»</p>
+          <span class="cert-year">2022</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOOLS ============ -->
+<section class="section tools" id="tools">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">08</span>
+      <h2 class="section-title">Инструменты</h2>
+      <span class="section-head-line" aria-hidden="true"></span>
+    </div>
+
+    <div class="tools-grid">
+      <div class="tool-card reveal" style="--rd:0s"><span class="tool-badge">VS</span><span class="tool-name">Visual Studio</span></div>
+      <div class="tool-card reveal" style="--rd:0.06s"><span class="tool-badge">VSC</span><span class="tool-name">VS Code</span></div>
+      <div class="tool-card reveal" style="--rd:0.12s"><span class="tool-badge">PY</span><span class="tool-name">PyCharm</span></div>
+      <div class="tool-card reveal" style="--rd:0.18s"><span class="tool-badge">AS</span><span class="tool-name">Android Studio</span></div>
+      <div class="tool-card reveal" style="--rd:0.24s"><span class="tool-badge">PS</span><span class="tool-name">Adobe Photoshop</span></div>
+      <div class="tool-card reveal" style="--rd:0.3s"><span class="tool-badge">FIG</span><span class="tool-name">Figma</span></div>
+      <div class="tool-card reveal" style="--rd:0.36s"><span class="tool-badge">CV</span><span class="tool-name">Canva</span></div>
+      <div class="tool-card reveal" style="--rd:0.42s"><span class="tool-badge">1C</span><span class="tool-name">1С:Предприятие</span></div>
+      <div class="tool-card reveal" style="--rd:0.48s"><span class="tool-badge">SQL</span><span class="tool-name">SQL</span></div>
+      <div class="tool-card reveal" style="--rd:0.54s"><span class="tool-badge" style="font-size:10.5px">SSMS</span><span class="tool-name">SQL Management Studio</span></div>
+      <div class="tool-card reveal" style="--rd:0.6s"><span class="tool-badge">DB</span><span class="tool-name">DBeaver</span></div>
+      <div class="tool-card reveal" style="--rd:0.66s"><span class="tool-badge">SQ</span><span class="tool-name">SQLite</span></div>
+      <div class="tool-card reveal" style="--rd:0.72s"><span class="tool-badge">PM</span><span class="tool-name">Postman</span></div>
+      <div class="tool-card reveal" style="--rd:0.78s"><span class="tool-badge" style="font-size:11px">SWG</span><span class="tool-name">Swagger</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROGRAMMING LANGUAGES ============ -->
+<section class="section lang-stack" id="languages">
+  <div class="container">
+    <div class="section-head reveal" style="margin-bottom:24px">
+      <span class="section-num">09</span>
+      <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.2rem)">Языки программирования</h2>
+      <span class="section-head-line" aria-hidden="true"></span>
+    </div>
+    <div class="lang-row reveal">
+      <span class="tag tag--solid">C#</span>
+      <span class="tag tag--solid">Python</span>
+      <span class="tag tag--solid">Java</span>
+      <span class="tag tag--solid">1C</span>
+      <span class="tag tag--solid">SQL</span>
+      <span class="tag tag--solid">React (JS)</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA / CONTACT ============ -->
+<section class="section cta" id="contact">
+  <div class="cta-decor-globe" data-parallax="0.05" aria-hidden="true">
+    <svg class="globe-svg"><use href="#i-globe"></use></svg>
+    <span class="globe-cross"></span>
+  </div>
+
+  <div class="container">
+    <div class="cta-grid">
+
+      <div class="cta-left reveal reveal--left">
+        <div class="section-head" style="margin-bottom:22px">
+          <span class="section-num">10</span>
+          <h2 class="section-title" style="font-size:13px;letter-spacing:.2em;color:var(--text-muted)">Контакты</h2>
+        </div>
+        <h2 class="cta-title"><span>Готова</span><span>расти дальше</span></h2>
+        <p class="cta-text">Открыта новым направлениям в программировании и быстро осваиваю то, что нужно проекту.</p>
+
+        <ul class="cta-contacts">
+          <li><a href="mailto:alicekomtula@mail.ru"><svg><use href="#i-mail"></use></svg>alicekomtula@mail.ru</a></li>
+          <li><a href="tel:+79534326160"><svg><use href="#i-phone"></use></svg>+7 953 432 61 60</a></li>
+          <li><a href="https://t.me/komalice" target="_blank" rel="noopener noreferrer"><svg><use href="#i-telegram"></use></svg>@komalice</a></li>
+          <li><span class="cta-location"><svg><use href="#i-pin"></use></svg>Серпухов, Россия</span></li>
+        </ul>
+      </div>
+
+      <div class="cta-right reveal reveal--right">
+        <div class="resume-card">
+          <a class="resume-qr" href="https://hh.ru/resume/be47a215ff0c36cedf0039ed1f666c71684e61?print=true" target="_blank" rel="noopener noreferrer" aria-label="Открыть резюме на hh.ru">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=260x260&amp;margin=0&amp;data=https%3A%2F%2Fhh.ru%2Fresume%2Fbe47a215ff0c36cedf0039ed1f666c71684e61%3Fprint%3Dtrue" alt="QR-код со ссылкой на резюме на hh.ru" width="132" height="132" loading="lazy">
+          </a>
+          <div class="resume-info">
+            <span class="eyebrow">Резюме на hh.ru</span>
+            <p>Отсканируйте QR-код или откройте резюме по ссылке.</p>
+            <a class="btn-arrow" href="https://hh.ru/resume/be47a215ff0c36cedf0039ed1f666c71684e61?print=true" target="_blank" rel="noopener noreferrer">Открыть резюме <svg><use href="#i-arrow"></use></svg></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <h2 class="footer-heading reveal">КОД.<br>ЛОГИКА.<br>ПОЛЬЗА.</h2>
+    <div class="footer-bottom-row">
+      <div class="footer-sign">
+        <svg class="footer-deco-symbol"><use href="#i-asterisk"></use></svg>
+        Alisa Komarova
+      </div>
+      <div class="footer-meta">
+        <span>© 2026</span>
+        <a href="#hero">Наверх ↑</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ CERTIFICATE LIGHTBOX ============ -->
+<div class="cert-lightbox" id="cert-lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+  <button class="cert-lightbox-close" id="cert-lightbox-close" type="button" aria-label="Закрыть">&times;</button>
+  <figure class="cert-lightbox-figure">
+    <img class="cert-lightbox-img" id="cert-lightbox-img" src="" alt="">
+    <figcaption class="cert-lightbox-caption" id="cert-lightbox-caption"></figcaption>
+  </figure>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- scroll progress ---------- */
+  var progressEl = document.getElementById('scroll-progress');
+  function updateProgress(){
+    var h = document.documentElement;
+    var scrollTop = h.scrollTop || document.body.scrollTop;
+    var scrollHeight = (h.scrollHeight || document.body.scrollHeight) - h.clientHeight;
+    var pct = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+    progressEl.style.width = pct + '%';
+  }
+
+  /* ---------- nav scrolled state ---------- */
+  var topnav = document.getElementById('topnav');
+  function updateNav(){
+    if (window.scrollY > 12) topnav.classList.add('is-scrolled');
+    else topnav.classList.remove('is-scrolled');
+  }
+
+  /* ---------- scroll-linked (rAF throttled) ---------- */
+  var parallaxEls = Array.prototype.slice.call(document.querySelectorAll('[data-parallax]'));
+  var ticking = false;
+  function onScroll(){
+    if (!ticking){
+      window.requestAnimationFrame(function(){
+        updateProgress();
+        updateNav();
+        if (!reduceMotion && window.innerWidth > 900){
+          var y = window.scrollY;
+          parallaxEls.forEach(function(el){
+            var factor = parseFloat(el.getAttribute('data-parallax')) || 0;
+            var offset = y * factor;
+            var base = el.getAttribute('data-parallax-base');
+            el.style.transform = base ? base.replace('{v}', offset.toFixed(1)) : 'translateY(' + offset.toFixed(1) + 'px)';
+          });
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  updateProgress();
+  updateNav();
+
+  /* ---------- reveal on scroll ---------- */
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting){
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('is-visible'); });
+  }
+
+  /* ---------- hero load-in sequence ---------- */
+  /* title, then photo, then the rest of the text are timed via CSS transition-delay off this one class,
+     added on the next two frames so the initial (hidden) state is guaranteed to paint first */
+  var hero = document.getElementById('hero');
+  requestAnimationFrame(function(){
+    requestAnimationFrame(function(){ hero.classList.add('is-loaded'); });
+  });
+
+  /* ---------- custom cursor (desktop, fine pointer only) ---------- */
+  if (window.matchMedia('(pointer: fine)').matches && !reduceMotion){
+    var cursor = document.getElementById('cursor-dot');
+    var cx = 0, cy = 0, dx = 0, dy = 0;
+    var active = false;
+
+    window.addEventListener('mousemove', function(e){
+      cx = e.clientX; cy = e.clientY;
+      if (!active){ active = true; cursor.classList.add('is-active'); }
+    });
+
+    function raf(){
+      dx += (cx - dx) * 0.18;
+      dy += (cy - dy) * 0.18;
+      cursor.style.left = dx + 'px';
+      cursor.style.top = dy + 'px';
+      window.requestAnimationFrame(raf);
+    }
+    window.requestAnimationFrame(raf);
+
+    var hoverables = document.querySelectorAll('a, button, .service-card, .project-card, .tool-card, .skill-item');
+    hoverables.forEach(function(el){
+      el.addEventListener('mouseenter', function(){ cursor.classList.add('is-grown'); });
+      el.addEventListener('mouseleave', function(){ cursor.classList.remove('is-grown'); });
+    });
+
+    document.addEventListener('mouseleave', function(){ cursor.classList.remove('is-active'); });
+    document.addEventListener('mouseenter', function(){ cursor.classList.add('is-active'); });
+  }
+
+  /* ---------- certificate lightbox ---------- */
+  var lightbox = document.getElementById('cert-lightbox');
+  var lightboxImg = document.getElementById('cert-lightbox-img');
+  var lightboxCaption = document.getElementById('cert-lightbox-caption');
+  var lightboxClose = document.getElementById('cert-lightbox-close');
+  var lastFocused = null;
+
+  function openLightbox(card){
+    var img = card.querySelector('.cert-photo img');
+    if (!img) return;
+    lastFocused = document.activeElement;
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt || '';
+    var title = card.querySelector('.cert-title');
+    var issuer = card.querySelector('.cert-issuer');
+    lightboxCaption.textContent = [title ? title.textContent : '', issuer ? issuer.textContent : ''].filter(Boolean).join(' — ');
+    lightbox.classList.add('is-open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    lightboxClose.focus();
+  }
+
+  function closeLightbox(){
+    lightbox.classList.remove('is-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    lightboxImg.src = '';
+    if (lastFocused) lastFocused.focus();
+  }
+
+  document.querySelectorAll('.cert-card--clickable').forEach(function(card){
+    card.addEventListener('click', function(){ openLightbox(card); });
+    card.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        openLightbox(card);
+      }
+    });
+  });
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', function(e){
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && lightbox.classList.contains('is-open')) closeLightbox();
+  });
+
+  /* ---------- project video lightbox ---------- */
+  var videoLightbox = document.getElementById('video-lightbox');
+  var videoLightboxVideo = document.getElementById('video-lightbox-video');
+  var videoLightboxCaption = document.getElementById('video-lightbox-caption');
+  var videoLightboxClose = document.getElementById('video-lightbox-close');
+  var lastFocusedVideo = null;
+
+  function openVideoLightbox(card){
+    var src = card.getAttribute('data-video');
+    if (!src) return;
+    lastFocusedVideo = document.activeElement;
+    videoLightboxVideo.src = src;
+    videoLightboxCaption.textContent = card.getAttribute('data-video-title') || '';
+    videoLightbox.classList.add('is-open');
+    videoLightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    videoLightboxVideo.play().catch(function(){});
+  }
+
+  function closeVideoLightbox(){
+    videoLightbox.classList.remove('is-open');
+    videoLightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    videoLightboxVideo.pause();
+    videoLightboxVideo.removeAttribute('src');
+    videoLightboxVideo.load();
+    if (lastFocusedVideo) lastFocusedVideo.focus();
+  }
+
+  document.querySelectorAll('.project-card--video').forEach(function(card){
+    card.addEventListener('click', function(){ openVideoLightbox(card); });
+    card.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        openVideoLightbox(card);
+      }
+    });
+  });
+
+  videoLightboxClose.addEventListener('click', closeVideoLightbox);
+  videoLightbox.addEventListener('click', function(e){
+    if (e.target === videoLightbox) closeVideoLightbox();
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && videoLightbox.classList.contains('is-open')) closeVideoLightbox();
+  });
+
+  /* ---------- project gallery lightbox ---------- */
+  var galleryLightbox = document.getElementById('gallery-lightbox');
+  var galleryImg = document.getElementById('gallery-lightbox-img');
+  var galleryCaption = document.getElementById('gallery-lightbox-caption');
+  var galleryClose = document.getElementById('gallery-lightbox-close');
+  var galleryPrev = document.getElementById('gallery-lightbox-prev');
+  var galleryNext = document.getElementById('gallery-lightbox-next');
+  var lastFocusedGallery = null;
+  var galleryImages = [];
+  var galleryIndex = 0;
+  var galleryTitle = '';
+
+  function updateGallerySlide(){
+    galleryImg.src = galleryImages[galleryIndex];
+    galleryImg.alt = galleryTitle;
+    var multi = galleryImages.length > 1;
+    var counter = multi ? ' (' + (galleryIndex + 1) + '/' + galleryImages.length + ')' : '';
+    galleryCaption.textContent = galleryTitle + counter;
+    galleryPrev.style.display = multi ? '' : 'none';
+    galleryNext.style.display = multi ? '' : 'none';
+  }
+
+  function openGalleryLightbox(card){
+    var imagesAttr = card.getAttribute('data-images');
+    if (!imagesAttr) return;
+    galleryImages = imagesAttr.split(',').map(function(s){ return s.trim(); }).filter(Boolean);
+    if (!galleryImages.length) return;
+    galleryTitle = card.getAttribute('data-gallery-title') || '';
+    galleryIndex = 0;
+    lastFocusedGallery = document.activeElement;
+    updateGallerySlide();
+    galleryLightbox.classList.add('is-open');
+    galleryLightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    galleryClose.focus();
+  }
+
+  function closeGalleryLightbox(){
+    galleryLightbox.classList.remove('is-open');
+    galleryLightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    galleryImg.src = '';
+    if (lastFocusedGallery) lastFocusedGallery.focus();
+  }
+
+  function showNextImage(){
+    if (galleryImages.length < 2) return;
+    galleryIndex = (galleryIndex + 1) % galleryImages.length;
+    updateGallerySlide();
+  }
+
+  function showPrevImage(){
+    if (galleryImages.length < 2) return;
+    galleryIndex = (galleryIndex - 1 + galleryImages.length) % galleryImages.length;
+    updateGallerySlide();
+  }
+
+  document.querySelectorAll('.project-card--gallery').forEach(function(card){
+    card.addEventListener('click', function(){ openGalleryLightbox(card); });
+    card.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        openGalleryLightbox(card);
+      }
+    });
+  });
+
+  galleryClose.addEventListener('click', closeGalleryLightbox);
+  galleryPrev.addEventListener('click', function(e){ e.stopPropagation(); showPrevImage(); });
+  galleryNext.addEventListener('click', function(e){ e.stopPropagation(); showNextImage(); });
+  galleryLightbox.addEventListener('click', function(e){
+    if (e.target === galleryLightbox) closeGalleryLightbox();
+  });
+  document.addEventListener('keydown', function(e){
+    if (!galleryLightbox.classList.contains('is-open')) return;
+    if (e.key === 'Escape') closeGalleryLightbox();
+    if (e.key === 'ArrowRight') showNextImage();
+    if (e.key === 'ArrowLeft') showPrevImage();
+  });
+
+})();
+</script>
+
+</body>
+</html>
